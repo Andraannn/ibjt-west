@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IBJT-West | Home</title>
+    <link rel="icon" type="image/png" href="{{ url_for('static', filename='images/logo.png') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/index.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/accordion.css') }}">
+</head>
+<body>
+    <div class="navbar">
+        <div class="navbar-left">
+            <a href="{{ url_for('index') }}" class="navbar-left-link">
+                <img src="/static/images/logo.png" alt="Logo" class="navbar-icon">
+                <span class="navbar-name">IBJT - Westbound</span>
+            </a>
+        </div>
+        <div class="navbar-links">
+            <a href="{{ url_for('index') }}" class="{% if request.endpoint == 'index' %}active{% endif %}">Home</a>
+            <a href="{{ url_for('about') }}" class="{% if request.endpoint == 'about' %}active{% endif %}">About</a>
+        </div>
+    
+        <!-- Hamburger menu for mobile view -->
+        <div class="navbar-toggle" onclick="toggleNavbar()">&#9776;</div>
+    </div>    
+
+    <!-- Hero Section with background image -->
+    <section class="hero">
+        <div class="hero-text">
+            <h1><span style="color: #006ee6;">I</span>ligan <span style="color: #006ee6;">B</span>us and <span style="color: #006ee6;">J</span>eepney and <span style="color: #006ee6;">T</span>erminal - Westbound</h1>
+        </div>
+    </section>
+
+    <br><br>
+
+    <section class="content">
+        <div class="content-container">
+            <img src="/static/images/terminal.png" class="image">
+            <div class="text-container">
+                <p>
+                    <span class="highlight">"E</span>
+                    <span class="text">
+                        nsuring Safe Journeys, Enhancing Collections”. The Iligan Bus and Jeepney Terminal is dedicated to providing high-quality facilities and services that enhance the overall 
+                        passenger experience. This includes an efficient ticketing system that ensures smooth and organized travel arrangements, well-maintained waiting areas that offer comfort and convenience, and clear information displays that provide real-time updates on schedules and other important announcements. Additionally, the terminal continuously implements improvements to promote accessibility, safety, and efficiency, creating a seamless and reliable transportation hub for commuters.
+                    </span>
+                </p>
+            </div>
+        </div>        
+    </section>
+    <br>
+    <section>
+        <h2 style="text-align: center; background-color: #0055b3; color: white; padding: 20px;">OBJECTIVES</h2>
+        <ul style="list-style: none; padding: 0; display: flex; flex-wrap: wrap; justify-content: center; gap: 20px;">
+            <li class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        PROVIDE AN EFFECTIVE TRANSPPORTATION SERVICE
+                    </div>
+                    <div class="flip-card-back">
+                        Ensuring reliable and timely travel for all passengers.
+                    </div>
+                </div>
+            </li>
+            <li class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        OFFER CONVENIENT TRANSPPORTATION OPTIONS
+                    </div>
+                    <div class="flip-card-back">
+                        Multiple routes and schedules for your needs.
+                    </div>
+                </div>
+            </li>
+            <li class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        CONTRIBUTE TO THE ACCESSIBILITY OF TRANSPORTATION SERVICES FOR RESIDENTS OF ILIGAN CITY AND ADJACENT PROVINCES/AREAS
+                    </div>
+                    <div class="flip-card-back">
+                        Making travel easy for everyone in the region.
+                    </div>
+                </div>
+            </li>
+            <li class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        ENHANCE THE EFFICIENCY OF TRANSPORTATION SERVICES
+                    </div>
+                    <div class="flip-card-back">
+                        Streamlined operations for faster journeys.
+                    </div>
+                </div>
+            </li>
+            <li class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        IMPROVE THE CONVENIENCE OF TRANSPORTATION FOR ALL USERS
+                    </div>
+                    <div class="flip-card-back">
+                        Comfortable facilities and easy access for passengers.
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </section>
+    <br><br><br>
+
+    <footer style="background-color: #0055b3; color: white; padding: 20px; padding-right: 20px; text-align: left; clear: both;">
+        <p style="font-size: large;"><b>Iligan Bus and Jeepney Terminal - Westbound</b></p>
+        <p style="font-size: small; color: #62bfe3; padding-bottom: 25px;"><i>Barangay Suarez, Iligan City, 9200 Lanao del Norte</i></p>        <br>
+        <p style="font-size: small; color: #d7f1fb; padding-bottom: 25px;"><i>Copyright &copy; 2025 | Andrei Adlawan. All rights reserved.</i></p>
+    </footer>
+
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>
