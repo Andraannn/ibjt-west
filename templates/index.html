@@ -29,7 +29,7 @@
     <!-- Hero Section with background image -->
     <section class="hero">
         <div class="hero-text">
-            <h1><span style="color: #006ee6;">I</span>ligan <span style="color: #006ee6;">B</span>us and <span style="color: #006ee6;">J</span>eepney <span style="color: #006ee6;">T</span>erminal - Westbound</h1>
+            <h1><span style="color: #006ee6;">I</span>ligan <span style="color: #006ee6;">B</span>us and <span style="color: #006ee6;">J</span>eepney <span style="color: #006ee6;">T</span>erminal - Westbound (EEDMO)</h1>
         </div>
     </section>
 
@@ -56,7 +56,7 @@
             <li class="flip-card">
                 <div class="flip-card-inner">
                     <div class="flip-card-front">
-                        PROVIDE AN EFFECTIVE TRANSPPORTATION SERVICE
+                        PROVIDE AN EFFECTIVE TRANSPORTATION SERVICE
                     </div>
                     <div class="flip-card-back">
                         Ensuring reliable and timely travel for all passengers.
@@ -66,7 +66,7 @@
             <li class="flip-card">
                 <div class="flip-card-inner">
                     <div class="flip-card-front">
-                        OFFER CONVENIENT TRANSPPORTATION OPTIONS
+                        OFFER CONVENIENT TRANSPORTATION OPTIONS
                     </div>
                     <div class="flip-card-back">
                         Multiple routes and schedules for your needs.
@@ -108,9 +108,17 @@
     <br><br><br>
 
     <footer style="background-color: #0055b3; color: white; padding: 20px; padding-right: 20px; text-align: left; clear: both;">
-        <p style="font-size: large;"><b>Iligan Bus and Jeepney Terminal - Westbound</b></p>
-        <p style="font-size: small; color: #62bfe3; padding-bottom: 25px;"><i>Barangay Suarez, Iligan City, 9200 Lanao del Norte</i></p>        <br>
-        <p style="font-size: small; color: #d7f1fb; padding-bottom: 25px;"><i>Copyright &copy; 2025 | Andrei Adlawan. All rights reserved.</i></p>
+      <p style="font-size: large;"><b>Iligan Bus and Jeepney Terminal - Westbound</b></p>
+      <p style="font-size: small; color: #62bfe3; padding-bottom: 25px;">
+        <img src="{{ url_for('static', filename='images/location-pin.png') }}" alt="Location" style="width:16px; height:16px; vertical-align:middle; margin-right:5px; filter: brightness(0) invert(1);">
+        <i>Barangay Suarez, Iligan City, Lanao del Norte 9200</i>
+      </p>
+      <a href="https://www.facebook.com/integratedbusjeepneyterminal/" target="_blank" style="display: inline-block; margin-bottom: 15px;">
+        <img src="{{ url_for('static', filename='images/facebook-icon.png') }}" alt="Facebook" style="width:24px; height:24px; vertical-align:middle; margin-right:8px; filter: brightness(0) invert(1);">
+        <span style="color: #d7f1fb; font-size: small;">Our Facebook Page</span>
+      </a>
+      <br>
+      <p style="font-size: small; color: #d7f1fb; padding-bottom: 25px;"><i>Copyright &copy; 2025 | Andrei Adlawan. All rights reserved.</i></p>
     </footer>
 
     <script src="{{ url_for('static', filename='js/script.js') }}"></script>
