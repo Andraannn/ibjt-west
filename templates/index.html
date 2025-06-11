@@ -106,18 +106,31 @@
     </section>
     <br><br><br>
 
-    <footer style="background-color: #0055b3; color: white; padding: 20px; padding-right: 20px; text-align: left; clear: both;">
-      <p style="font-size: large;"><b>Iligan Bus and Jeepney Terminal - Westbound</b></p>
-      <p style="font-size: small; color: #62bfe3; padding-bottom: 25px;">
-        <img src="{{ url_for('static', filename='images/location-pin.png') }}" alt="Location" style="width:16px; height:16px; vertical-align:middle; margin-right:5px; filter: brightness(0) invert(1);">
-        <i>Barangay Suarez, Iligan City, Lanao del Norte 9200</i>
-      </p>
-      <a href="https://www.facebook.com/integratedbusjeepneyterminal/" target="_blank" style="display: inline-block; margin-bottom: 15px;">
-        <img src="{{ url_for('static', filename='images/facebook-icon.png') }}" alt="Facebook" style="width:24px; height:24px; vertical-align:middle; margin-right:8px; filter: brightness(0) invert(1);">
-        <span style="color: #d7f1fb; font-size: small;">Our Facebook Page</span>
-      </a>
-      <br>
-      <p style="font-size: small; color: #d7f1fb; padding-bottom: 25px;"><i>Copyright &copy; 2025 | Andrei Adlawan. All rights reserved.</i></p>
+    <footer>
+        <link rel="stylesheet" href="../static/css/footer.css">
+
+        <div class="footer-container">
+            <div class="footer-logo">
+                <div class="logo-images">
+                    <img src="../static/images/iligan_seal.png" alt="Iligan City Logo">
+                    <img src="../static/images/logo.png" alt="IBJT Logo">
+                    <img src="../static/images/EEDMO_logo.png" alt="EEDMO Logo">
+                </div>
+                <span class="footer-text">Iligan Bus and Jeepney Terminal - Westbound</span>
+                <div class="footer-contact">
+                    <p><strong>Address:</strong> Barangay Suarez, Iligan City, Lanao del Norte 9200</p>
+                    <p><strong>Phone:</strong> (063) 224-8068</p>
+                </div>
+            </div>
+
+            <div class="footer-social">
+                <a href="https://www.facebook.com/integratedbusjeepneyterminal/" target="_blank"><img src="../static/images/facebook-icon.png" alt="Facebook"></a>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            &copy; 2025 Andrei Gabrielle Adlawan. All rights reserved.
+        </div>
     </footer>
 
     <script src="{{ url_for('static', filename='js/script.js') }}"></script>
