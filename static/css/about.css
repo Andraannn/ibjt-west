@@ -236,10 +236,72 @@
     color: #666;
 }
 
+.image-slider-container {
+    width: 100%;
+    max-width: 1200px;
+    height: 500px;
+    margin: 30px auto;
+    padding: 0 16px;
+    box-sizing: border-box;
+}
+
+/* Slider styling */
+.image-slider {
+    overflow: hidden;
+    border-radius: 12px;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+    background: #fff;
+}
+
+.slider {
+    display: flex;
+    transition: transform 0.5s ease;
+    /* You may need JS to animate slides */
+}
+
+/* Each slide */
+.slide {
+    min-width: 100%;
+    box-sizing: border-box;
+    text-align: center;
+    position: relative;
+}
+
+.slide img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    border-radius: 12px 12px 0 0;
+    display: block;
+}
+
+.slide .text {
+    background: rgba(0, 41, 87, 0.9);
+    color: #fff;
+    padding: 12px 0;
+    font-size: 1.1rem;
+    border-radius: 0 0 12px 12px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    left: 0;
+}
+
 
 @media (max-width: 768px) {
     .project-grid {
         grid-template-columns: 1fr;
+    }
+    .image-slider-container {
+        max-width: 100%;
+        padding: 0 8px;
+    }
+    .slide img {
+        height: 300px;
+    }
+    .slide .text {
+        font-size: 1rem;
+        padding: 8px 0;
     }
 }
 
