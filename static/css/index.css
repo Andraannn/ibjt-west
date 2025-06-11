@@ -351,23 +351,24 @@
     align-items: center;
     justify-content: center;
     border-radius: 12px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
     font-size: 1rem;
     padding: 18px;
     z-index: 1;
     padding: 18px;
 }
 .flip-card-front {
-    background-color: #e6f0fa;
-    color: #0055b3;
+    background-image: linear-gradient(to bottom right,rgb(91, 171, 250), #ddf1fd);
     font-weight: bold;
     font-family: 'Segoe UI', Arial, sans-serif;
     font-style: italic;
+    color:rgb(55, 55, 55);
 }
 .flip-card-back {
     background-color: #0055b3;
     color: #fff;
     transform: rotateY(180deg);
+    font-family: 'Roboto', sans-serif;
 }
 @media (max-width: 800px) {
     .flip-card {
