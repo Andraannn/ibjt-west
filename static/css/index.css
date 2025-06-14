@@ -248,6 +248,7 @@
 }
 
 .highlight {
+    font-family: "Lucida Calligraphy", "Apple Chancery", cursive;
     font-size: 2.5em;
     color:rgb(52, 155, 234);
     line-height: 1;
@@ -382,4 +383,32 @@
         flex-direction: column;
         align-items: center;
     }
+}
+.site-footer-marquee {
+  overflow: hidden;
+  width: 100%;
+  margin-top: 30px;
+  background: #f9f9f9; /* optional */
+  padding: 10px 0;
+}
+
+.marquee__track {
+  display: flex;
+  width: max-content;
+  animation: scroll-left 25s linear infinite;
+}
+
+.marquee__group {
+  display: flex;
+  gap: 40px; /* spacing between logos */
+}
+
+.marquee__group img {
+  height: 40px;
+  flex-shrink: 0;
+}
+
+@keyframes scroll-left {
+  0%   { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
 }
