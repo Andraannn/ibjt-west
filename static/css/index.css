@@ -116,16 +116,22 @@
 /* CONTENT */
 .content-container {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: flex-start;
     padding: 32px 20px;
     gap: 32px;
-    max-width: 1200px; 
-    margin: 0 auto;               
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
-.left-container, 
+.left-container {
+    flex: 2 1 0;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
 .right-container {
     flex: 1 1 0;
     display: flex;
@@ -133,13 +139,12 @@
     align-items: center;
 }
 
-.image {
+.video {
     width: 100%;
-    max-width: 100%;
-    height: auto;
-    margin: 0;
-    border-radius: 12px;
-    box-shadow: 0 8px 24px 0 rgba(0,0,0,0.13), 0 6px 20px 0 rgba(0,0,0,0.10);
+    max-width: 800px;
+    height: 500px;
+    border-radius: 15px;
+    object-fit: cover;
 }
 
 .text-container {
@@ -244,11 +249,14 @@
     padding: 18px;
 }
 .flip-card-front {
-    background-image: linear-gradient(to bottom right,rgb(91, 171, 250), #ddf1fd);
+    background-image: url('/static/images/terminal.png'), 
+                      linear-gradient(to bottom right, rgb(91, 171, 250), #ddf1fd);
+    background-size: cover;
+    background-blend-mode: overlay;
     font-weight: bold;
     font-family: 'Segoe UI', Arial, sans-serif;
     font-style: italic;
-    color:rgb(55, 55, 55);
+    color: rgb(55, 55, 55);
 }
 .flip-card-back {
     background-color: #0055b3;
@@ -311,11 +319,6 @@
     .left-container, .right-container {
         flex: 1 1 100%;
         max-width: 100%;
-    }
-    .image {
-        width: 90%;
-        max-width: 380px;
-        margin: 20px 0;
     }
     .text-container {
         width: 90%;
@@ -416,15 +419,20 @@
     }
     /* Content */
     .content-container {
+        flex-wrap: wrap;
         flex-direction: column;
         align-items: center;
         gap: 16px;
         padding: 16px 0;
     }
-    .image {
-        width: 98%;
-        max-width: 320px;
-        margin: 10px 0;
+    .left-container, .right-container {
+        flex: 1 1 100%;
+        width: 100%;
+        justify-content: center;
+    }
+    .video {
+        width: 90%;
+        height: auto;
     }
     .text-container {
         width: 95%; 

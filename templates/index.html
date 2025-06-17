@@ -36,9 +36,19 @@
     <section class="content">
         <div class="content-container">
             <div class="left-container">
-                <img src="/static/images/terminal.png" class="image">
-                <!-- <iframe class="video" width="100%" height="400" src="https://www.youtube.com/embed/Gec7kBQIqUI" title="IBJT-West Video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="border-radius: 16px;"> 
-                </iframe> -->
+            <video
+            class="video"
+            controls
+            autoplay
+            muted
+            loop
+            playsinline
+            preload="metadata"
+            poster="{{ url_for('static', filename='video/video-preview.jpg') }}"
+            >
+            <source src="{{ url_for('static', filename='video/compressed_interview.mp4') }}" type="video/mp4">
+            Your browser does not support the video tag.
+            </video>
             </div>
             <div class="right-container">
                 <div class="text-container">
