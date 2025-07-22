@@ -395,10 +395,10 @@
         color: white;
     }
     .navbar.scrolled a.active {
-        color: #f5de55;
+        color: #bde4f4;
     }
     .navbar.scrolled a:hover {
-        color: #f5de55;
+        color: #bde4f4;
     }
     /* Hero */
     .hero {
