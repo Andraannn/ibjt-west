@@ -394,12 +394,6 @@
     .navbar.scrolled a {
         color: white;
     }
-    .navbar.scrolled a.active {
-        color: #bde4f4;
-    }
-    .navbar.scrolled a:hover {
-        color: #bde4f4;
-    }
     /* Hero */
     .hero {
         height: 40vh;
